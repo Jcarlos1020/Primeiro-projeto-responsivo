@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.lado-esquerdo {
+    display: inline-block;
+    width: 60%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.lado-direito {
+
+    display: inline-block;
+    background: rgba(29, 93, 125, 0.16);
+    height: 100vw;
+    width: 40%;
+    position: absolute;
+}
+
+img {
+
+    POSITION: relative;
+    TOP: 25%;
+    RIGHT: 18%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    width: 368px;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+    opacity: 0.6;
+    margin: 15px 0;
+    width: 540px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30PX;
+    cursor: pointer;
+}
+
+button:hover {
+    color: green;
+    transition: 0.5s;
+}
+
+button:active {
+    opacity: 0.5;
+    background: green;
+    transition: 0.5s ;
+}
+
+a {
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    margin-left: 41px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+a:nth-child(2) {
+
+    opacity: 0.8;
+}
+
+a:hover {
+
+    transition: 0.5s;
+    color: green;
+
+}
+
+a:active {
+    opacity: .8;
+    color: green;
+    transition: 0.5s;
+}
+
+header {
+    margin-top: 25px;
+    margin-left: 57px;
+    margin-right: 57px;
+}
+
+@media screen and (max-width: 900px) {
+    .lado-esquerdo {
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lado-direito {
+        display: block;
+        height: 50%;
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin-top: 58px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 25px;
+        line-height: 26px;
+        text-align: center;
+        margin: 15px 40px;
+        width: auto;
+    }
+    
+button{
+    margin: 0 auto;
+    display: block;
+  
+}
+}
